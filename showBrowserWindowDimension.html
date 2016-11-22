@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Browser Window Dimension On Resizing</title>
+    <meta name="description" content="Show Browser Window Dimension On Resizing | نمایش ابعاد پنجره مرورگر در حالت ریسایز کردن مرورگر"/>
+    <style>
+        /*
+        This File Was Coded By Amin Arjmand | Email: aminarj2000@gmail.com | Site: aminarjmand.com | Github Profile : https://github.com/sibche2013
+        */
+        body{
+            background-color: #f1f1f1;
+        }
+        .board {
+            padding: 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(0, 200, 81);
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .board:hover {
+            transition: 0.2s;
+            box-shadow: inset 0 0 50px #1c8a1f;
+        }
+
+        .center{
+            text-align: center;
+        }
+    </style>
+</head>
+<body onload="resize()" onresize="resize();">
+<div class="center">
+    <p>Display Height & Width Of Your Browser</p>
+<button id="btn" class="board"> ... </button>
+</div>
+<script>
+    function resize() {
+        document.getElementById('btn').innerHTML = "Width Of Browser Is: " + innerWidth + "px" + "<br>Height Of Browser Is: " + innerHeight + "px<br><br>"+innerWidth+"px * "+innerHeight+"px";
+    }
+</script>
+</body>
+</html>
