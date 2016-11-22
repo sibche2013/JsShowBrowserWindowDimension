@@ -1,4 +1,4 @@
-# JavaScript ShowBrowserWindowDimension
+# JavaScript Show Browser Window Dimension
 Show Browser Window Dimension On Resizing
 
 # Online Demo
